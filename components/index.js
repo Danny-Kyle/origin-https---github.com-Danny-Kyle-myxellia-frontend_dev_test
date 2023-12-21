@@ -1,9 +1,8 @@
 import Header from "./Header";
 import Body from "./Body";
-import Dashboard from "./Dashboard";
-
+import Navbar from "./Navbar";
 export {
     Header,
     Body,
-    Dashboard,
+    Navbar,
 }
