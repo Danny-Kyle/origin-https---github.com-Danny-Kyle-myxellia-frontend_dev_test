@@ -14,14 +14,13 @@ import {
 
 const ListingOverview = () => {
   return (
-    <Box>
+    <Box bgColor={"white"} w="475px" h="287px" border borderRadius={"16px"} padding={"10px"}>
       <Flex direction={"column"}>
-        <Text>Listing Overview</Text>
+        <Text fontWeight={600} fontSize={"20px"}>Listing Overview</Text>
         <Grid>
           <Flex>
             <Box>
               <Text>Most Viewed</Text>
-              <br className="text-gray-950"/>
               <Flex>
                 <Image src="/listingIcon.svg" alt="listingImg" />
                 <Text>None</Text>
@@ -35,10 +34,10 @@ const ListingOverview = () => {
               </Flex>
             </Box>
           </Flex>
-          <Container bgColor={"gray.600"}>
-            <Flex>
+          <Container bgColor={"gray"}>
+            <Flex direction={"column"} padding={"30px"}>
               <Text>Most watchlisted</Text>
-              <Flex>
+              <Flex direction={"row"}>
                 <Image src="/listingIcon.svg" alt="listingImg" />
                 <Text>None</Text>
 

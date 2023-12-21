@@ -4,7 +4,7 @@ import { Box, Stack,Text, HStack, Spacer,Button,Flex, Container } from "@chakra-
 const SalesMetrics = () => {
   return (
     <Container w="350px" h="287px" padding={'20px'} bgColor={"white"} borderRadius={"16px"}>
-        <Text className='text-green-600'>Top Selling</Text>
+        <Text className='text-green-600' fontWeight={600} fontSize={"20px"}>Top Selling</Text>
         <Box>
         <Flex direction={'row'}>
             <Text className='text-black'>N 0</Text>

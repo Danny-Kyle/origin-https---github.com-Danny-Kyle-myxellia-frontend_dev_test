@@ -13,11 +13,11 @@ import {
 
 const Body = () => {
   return (
-    <Box>
+    <Box h={"750px"} w={"1360px"} paddingY={"20px"} paddingX={"40px"}>
       <Flex>
         <Dashboard />
       </Flex>
-      <Flex direction={'row'}>
+      <Flex direction={'row'} marginY={"14px"} gap={"12px"} justifyContent={"space-between"}>
         <ListingOverview />
         <BalanceMetrics />
         <SalesMetrics />

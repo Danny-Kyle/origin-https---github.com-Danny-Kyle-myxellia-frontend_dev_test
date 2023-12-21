@@ -59,7 +59,7 @@ const Dashboard = () => {
     <Box>
       <Flex direction={"column"}>
         <Box>
-          <Text display={"flex"} flexDir={"row"}>
+          <Text display={"flex"} flexDir={"row"} fontWeight={600} fontSize={"20px"}>
             <Image src="/hand.svg" alt="hand" />
             Hi Ahmed
           </Text>

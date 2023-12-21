@@ -1,5 +1,5 @@
-import { Box, Stack, HStack, Button } from "@chakra-ui/react";
-import { Image } from '@chakra-ui/react'
+import { Flex, Stack, Box, Text } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 
 const NavItems = [
   {
@@ -30,18 +30,28 @@ const NavItems = [
 
 const SearchBar = () => {
   return (
-    <Button placeholder={"Search..... properties, customers here"}>
-      <p>Searchimage</p>
-    </Button>
+    <Box bgColor={"gray"} borderRadius={"12px"} margin={"8px"}>
+      <Flex paddingX={"16px"} paddingY={"10px"} gap={"10px"}>
+        <Text>{"Search..... properties, customers here"} </Text>
+        <Image src="searchIcon.svg" alt="search" />
+      </Flex>
+    </Box>
   );
 };
 
 const Navbar = () => {
   return (
-    <Stack direction="row">
+    <Stack
+      direction="row"
+      bgColor={"white"}
+      w={"1366px"}
+      h={"67px"}
+      paddingX={"48px"}
+      justifyContent={"space-between"}
+    >
       {NavItems.map((item) => (
-        <div className="flex flex-row gap-3" key={item.name}>
-          <Image src={item.src} alt={item.name}/>
+        <div className="flex flex-row gap-3 items-center justify-between" key={item.name}>
+          <Image src={item.src} alt={item.name} />
           <p>{item.name}</p>
         </div>
       ))}
