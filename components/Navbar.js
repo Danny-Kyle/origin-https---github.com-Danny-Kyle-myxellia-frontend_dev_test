@@ -1,48 +1,48 @@
 import { Box, Stack, HStack, Button } from "@chakra-ui/react";
+import { Image } from '@chakra-ui/react'
 
 const NavItems = [
   {
     name: "Dashboard",
-    src: "",
+    src: "/dashIcon.svg",
   },
   {
     name: "Listings",
-    src: "",
+    src: "/location.svg",
   },
   {
     name: "Users",
-    src: "",
+    src: "/user.svg",
   },
   {
     name: "Account",
-    src: "",
+    src: "/account.svg",
   },
   {
     name: "Request",
-    src: "",
+    src: "/request.svg",
   },
   {
     name: "Settings",
-    src: "",
+    src: "/settings.svg",
   },
 ];
 
 const SearchBar = () => {
   return (
-    <Button _placeholder={"Search..... properties, customers here"}>
+    <Button placeholder={"Search..... properties, customers here"}>
       <p>Searchimage</p>
     </Button>
   );
 };
 
 const Navbar = () => {
-  console.log(NavItems);
   return (
     <Stack direction="row">
       {NavItems.map((item) => (
         <div className="flex flex-row gap-3" key={item.name}>
+          <Image src={item.src} alt={item.name}/>
           <p>{item.name}</p>
-          {/* <p>{item.src}</p> */}
         </div>
       ))}
       <SearchBar />
