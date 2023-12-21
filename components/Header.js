@@ -2,7 +2,7 @@ import { Box, Spacer, Flex, HStack, Button, useBoolean, Drawer } from "@chakra-u
 import Image from "next/image";
 
 const Header = () => {
-  const [drawer, setDrawer] = useBoolean()
+  // const [drawer, setDrawer] = useBoolean()
   return (
     <Flex direction="row" bg="black" w="1440px" h="149px" mx="auto">
       <Box
@@ -21,7 +21,7 @@ const Header = () => {
             <Button>
               <Image src="/addIcon.svg" alt="add" width={36} height={10} />
             </Button>
-            <Button onClick={setDrawer.toggle}>
+            <Button>
               <Image src="/calendarIcon.svg" alt="add" width={36} height={10} />
             </Button>
             <Button>
@@ -38,7 +38,7 @@ const Header = () => {
         </Box>
       </Box>
 
-      {drawer ? <Drawer></Drawer> : null}
+      {/* {drawer ? <Drawer></Drawer> : null} */}
     </Flex>
   );
 };
