@@ -35,8 +35,14 @@ const Header = () => {
             height={30}
           />
         </Button>
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={btnRef}>
-          <Calendar />
+        <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={btnRef} size='xs'>
+          <DrawerOverlay />
+          <DrawerContent bgColor={'white'}>
+            <DrawerCloseButton />
+            <DrawerHeader>Calendar</DrawerHeader>
+<DrawerBody>          <Calendar /></DrawerBody>
+
+          </DrawerContent>
         </Drawer>
         <Image src={"/notification.svg"} alt="notif" width={30} height={30} />
         <Menu>

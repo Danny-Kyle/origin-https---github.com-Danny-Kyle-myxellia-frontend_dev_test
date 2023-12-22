@@ -114,7 +114,7 @@ const Dashboard = () => {
                           h={"49px"}
                           w={"87px"}
                           borderRadius={"12px"}
-                          border={"1px solid #000"}
+                          border
                           marginX={3}
                         >
                           <VStack>
