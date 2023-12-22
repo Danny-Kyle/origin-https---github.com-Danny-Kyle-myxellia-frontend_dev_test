@@ -74,9 +74,9 @@ const Dashboard = () => {
         <Flex direction={"row"} gap={16}>
           <SalesOverview />
           <Flex direction={"column"} gap={12}>
-            {Majprops.map((item) => (
+            {Majprops.map((item, index) => (
               <Box
-                key={item.id}
+                key={index}
                 w={"407px"}
                 h={"157px"}
                 paddingX={'24px'}
@@ -108,12 +108,14 @@ const Dashboard = () => {
                         key={item.id}
                         display={"flex"}
                         flexDirection={"row"}
+                        gap={12}
                       >
                         <Box
                           h={"49px"}
                           w={"87px"}
                           borderRadius={"12px"}
-                          border
+                          border={"1px solid #000"}
+                          marginX={3}
                         >
                           <VStack>
                             <Text>{item.number}</Text>
