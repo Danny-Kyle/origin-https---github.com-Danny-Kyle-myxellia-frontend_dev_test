@@ -30,7 +30,7 @@ const NavItems = [
 
 const SearchBar = () => {
   return (
-    <Box bgColor={"gray"} borderRadius={"12px"} margin={"8px"}>
+    <Box bgColor={'ghostwhite'} borderRadius={"12px"} margin={"8px"}>
       <Flex paddingX={"16px"} paddingY={"10px"} gap={"10px"}>
         <Text>{"Search..... properties, customers here"} </Text>
         <Image src="searchIcon.svg" alt="search" />

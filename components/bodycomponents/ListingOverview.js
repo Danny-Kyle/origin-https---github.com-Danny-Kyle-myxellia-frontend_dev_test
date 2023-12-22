@@ -2,58 +2,54 @@ import React from "react";
 import { Image } from "@chakra-ui/react";
 import {
   Box,
-  Stack,
-  Text,
-  HStack,
-  Spacer,
-  Button,
+  Text, 
   Flex,
   Container,
-  Grid,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 const ListingOverview = () => {
   return (
-    <Box bgColor={"white"} w="475px" h="287px" border borderRadius={"16px"} padding={"10px"}>
+    <Box bgColor={"white"} w="475px" boxShadow={'md'} h="287px" border borderRadius={"16px"} padding={"16px"}>
       <Flex direction={"column"}>
         <Text fontWeight={600} fontSize={"20px"}>Listing Overview</Text>
-        <Grid>
-          <Flex>
-            <Box>
+        <SimpleGrid spacing={'8'} justifyContent={'space-between'}>
+          <Flex justifyContent={'space-between'} paddingRight={'24px'}>
+            <Flex gap={8} direction={'column'}>
               <Text>Most Viewed</Text>
-              <Flex>
+              <Flex gap={10}>
                 <Image src="/listingIcon.svg" alt="listingImg" />
-                <Text>None</Text>
+                <Text fontWeight={600} fontSize={"20px"}>None</Text>
               </Flex>
-            </Box>
-            <Box>
+            </Flex>
+            <Flex gap={8} direction={'column'}>
               <Text>Most Shared</Text>
-              <Flex>
+              <Flex gap={10}>
                 <Image src="/listingIcon.svg" alt="listingImg" />
-                <Text>None</Text>
+                <Text fontWeight={600} fontSize={"20px"}>None</Text>
               </Flex>
-            </Box>
+            </Flex>
           </Flex>
-          <Container bgColor={"gray"}>
-            <Flex direction={"column"} padding={"30px"}>
+          <Container bgColor={'ghostwhite'} borderRadius={"24px"} w={'437px'} h={'109px'}>
+            <Flex direction={"column"} padding={"10px"}>
               <Text>Most watchlisted</Text>
-              <Flex direction={"row"}>
+              <Flex direction={"row"} gap={'10px'}>
                 <Image src="/listingIcon.svg" alt="listingImg" />
-                <Text>None</Text>
+                <Text fontWeight={600} fontSize={"20px"}>None</Text>
 
-                <Box w={"189px"} h={"68px"}>
-                  <Flex>
-                    <Flex>
+                <Flex w={"189px"} h={"68px"} bgColor={'white'} borderRadius={"20px"} margin={2} padding={4}>
+                  <Flex justifyContent={'space-between'}>
+                    <Flex direction={'column'}>
                       <Text>0</Text>
                       <Text>Number of watchlists</Text>
                     </Flex>
-                    <Image src="watchlistIcon.svg" alt="watchlist" />
+                    <Image src="watchlistIcon.svg" alt="watchlist" w={15} h={30}/>
                   </Flex>
-                </Box>
+                </Flex>
               </Flex>
             </Flex>
           </Container>
-        </Grid>
+        </SimpleGrid>
       </Flex>
     </Box>
   );
