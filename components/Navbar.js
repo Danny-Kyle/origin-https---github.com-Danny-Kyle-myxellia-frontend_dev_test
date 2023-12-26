@@ -1,4 +1,4 @@
-import { Flex, Stack, Box, Text } from "@chakra-ui/react";
+import { Flex, Stack, Box,Input } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 
 const NavItems = [
@@ -30,10 +30,10 @@ const NavItems = [
 
 const SearchBar = () => {
   return (
-    <Box bgColor={'ghostwhite'} borderRadius={"12px"} margin={"8px"}>
-      <Flex paddingX={"16px"} paddingY={"10px"} gap={"10px"}>
-        <Text>{"Search..... properties, customers here"} </Text>
-        <Image src="searchIcon.svg" alt="search" />
+    <Box bgColor={'ghostwhite'} borderRadius={"12px"} width={"319px"} height={"43px"} margin={"8px"}>
+      <Flex paddingX={"16px"} paddingY={"10px"} gap={"10px"} justifyContent={'space-between'}>
+        <Input placeholder="Search..... properties, customers here" size='sm' variant='unstyled'/>
+        <Image src="searchIcon.svg" alt="search" /> 
       </Flex>
     </Box>
   );

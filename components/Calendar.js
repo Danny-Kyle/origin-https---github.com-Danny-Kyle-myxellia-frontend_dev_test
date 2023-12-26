@@ -13,7 +13,6 @@ const MyCalendar = () => {
 
   return (
     <div>
-      <h2>My Calendar</h2>
       <Calendar onChange={handleDateChange} value={selectedDate} />
       <p>Selected Date: {selectedDate.toDateString()}</p>
     </div>
