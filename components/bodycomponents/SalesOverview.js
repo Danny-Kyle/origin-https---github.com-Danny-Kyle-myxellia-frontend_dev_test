@@ -17,7 +17,7 @@ const SalesOverview = () => {
         <Text fontWeight={600} fontSize={"20px"}>Sales Overview</Text>
         <Text>Showing overview Jan 2022 - Sep 2022</Text>
       </Flex>
-      <Box border w={'177px'} h={'46px'} borderRadius={"12px"} bgColor={'ghostwhite'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+      <Box border w={'177px'} h={'46px'} borderRadius={"12px"} bgColor={'transparent'} border={'solid'} borderColor={'black'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
         View Transactions
       </Box>
       </Flex>

@@ -32,7 +32,7 @@ const SearchBar = () => {
   return (
     <Box bgColor={'ghostwhite'} borderRadius={"12px"} width={"319px"} height={"43px"} margin={"8px"}>
       <Flex paddingX={"16px"} paddingY={"10px"} gap={"10px"} justifyContent={'space-between'}>
-        <Input placeholder="Search..... properties, customers here" size='sm' variant='unstyled'/>
+        <Input placeholder="Search..... properties, customers here" size='lg' variant='unstyled' width={280} bgColor={'ghostwhite'} border={'ghostwhite'}/>
         <Image src="searchIcon.svg" alt="search" /> 
       </Flex>
     </Box>
