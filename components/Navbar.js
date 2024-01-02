@@ -50,7 +50,7 @@ const Navbar = () => {
       justifyContent={"space-between"}
     >
       {NavItems.map((item) => (
-        <div className="flex flex-row gap-3 items-center justify-between" key={item.name}>
+        <div className="flex flex-row gap-3 items-center justify-between cursor-pointer" key={item.name}>
           <Image src={item.src} alt={item.name} />
           <p>{item.name}</p>
         </div>
