@@ -29,7 +29,6 @@ const SalesOverview = () => {
           <Text>Showing overview Jan 2022 - Sep 2022</Text>
         </Flex>
         <Box
-          border
           w={"177px"}
           h={"46px"}
           borderRadius={"12px"}
@@ -54,7 +53,6 @@ const SalesOverview = () => {
         <Flex>
           <SimpleGrid columns={2} spacing={8}>
           <Box
-            border
             w={"189px"}
             h={"73px"}
             borderRadius={"12px"}
@@ -73,7 +71,6 @@ const SalesOverview = () => {
             </Flex>
           </Box>
           <Box
-            border
             w={"189px"}
             h={"73px"}
             borderRadius={"12px"}
@@ -92,7 +89,6 @@ const SalesOverview = () => {
             </Flex>
           </Box>
           <Box
-            border
             w={"189px"}
             h={"73px"}
             borderRadius={"12px"}
@@ -111,7 +107,6 @@ const SalesOverview = () => {
             </Flex>
           </Box>
           <Box
-            border
             w={"189px"}
             h={"73px"}
             borderRadius={"12px"}
