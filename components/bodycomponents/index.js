@@ -9,3 +9,5 @@ export {
     ListingOverview,
     SalesMetrics,
 }
+
+//need to separate all metrics and make app smoother also to work on mobile view and responsiveness
