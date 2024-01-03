@@ -174,6 +174,18 @@ const Dashboard = () => {
                     w={"87px"}
                     borderRadius={"12px"}
                     border={"solid"}
+                    marginX={3}
+                  >
+                    <VStack>
+                      <Text>0</Text>
+                      <Text>Available</Text>
+                    </VStack>
+                  </Box>
+                  <Box
+                    h={"49px"}
+                    w={"87px"}
+                    borderRadius={"12px"}
+                    border={"solid"}
                   >
                     <VStack>
                       <Text>0</Text>
