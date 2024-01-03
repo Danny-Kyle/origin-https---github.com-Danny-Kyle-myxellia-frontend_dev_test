@@ -124,9 +124,7 @@ const SalesOverview = () => {
               </Flex>
             </Flex>
           </Box>
-          
           </SimpleGrid>
-          
         </Flex>
       </Flex>
     </Box>
